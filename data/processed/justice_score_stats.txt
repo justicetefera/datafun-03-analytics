@@ -1,0 +1,9 @@
+Justice's Custom Score Statistics Report
+Analyzed student performance data.
+
+Count: 5
+Minimum: 79.00
+Maximum: 95.00
+Mean: 88.20
+Standard Deviation: 6.06
+Range: 16.00

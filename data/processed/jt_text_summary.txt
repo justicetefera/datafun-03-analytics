@@ -1,0 +1,7 @@
+Justice's Custom Text Summary Report
+Analyzed text file statistics.
+
+Lines: 4
+Words: 26
+Characters: 169
+Average Words per Line: 6.50

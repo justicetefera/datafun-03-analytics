@@ -1,0 +1,4 @@
+Hello Justice.
+This is your custom text pipeline test file.
+It checks lines, words, characters, and average words per line.
+Great job building your analytics pipelines!

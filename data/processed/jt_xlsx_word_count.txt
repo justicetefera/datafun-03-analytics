@@ -1,0 +1,7 @@
+Justice's Custom XLSX Word Count Report
+Analyzed Excel feedback data.
+
+Word counted: excellent
+Column scanned: A
+Rows scanned: 6
+Total occurrences: 3

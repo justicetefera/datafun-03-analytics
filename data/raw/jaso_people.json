@@ -1,0 +1,10 @@
+{
+  "people": [
+    { "name": "Alice", "country": "USA" },
+    { "name": "Biko", "country": "Kenya" },
+    { "name": "Chen", "country": "China" },
+    { "name": "Dina", "country": "USA" },
+    { "name": "Elias", "country": "Ethiopia" },
+    { "name": "Fatima", "country": "" }
+  ]
+}

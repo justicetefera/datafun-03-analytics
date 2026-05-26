@@ -1,0 +1,8 @@
+Justice's Custom JSON Country Report
+Analyzed people grouped by country.
+
+China: 1
+Ethiopia: 1
+Kenya: 1
+USA: 2
+Unknown: 1
