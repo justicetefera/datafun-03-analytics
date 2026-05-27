@@ -1,106 +1,152 @@
-# datafun-03-analytics
+# Analytics
 
 [![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](#)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
 
-> Professional Python project: working with data files for analytics.
+Python 3.14+ • MIT License
 
-Data analytics requires a variety of skills.
-This course builds capabilities through working projects.
+A professional Python analytics project demonstrating multi-format ETL (Extract–Transform–Load) pipelines.
+This repository: https://github.com/justicetefera/datafun-03-analytics
 
-In the age of generative AI, durable skills are grounded in real work:
-setting up a professional environment,
-reading and running code,
-understanding the logic,
-and pushing work to a shared repository.
-Each project follows the structure of professional Python projects.
-We learn by doing.
+This project processes real data files, generates structured outputs, and follows the conventions of modern Python development.
+
+---
+
+## Project Overview
+
+Data analytics requires durable, real-world skills: setting up a clean environment, reading and understanding code, running pipelines, interpreting results, and pushing work to a shared repository.
+This project builds those capabilities through hands-on practice with a fully structured Python codebase.
+
+In the age of generative AI, the most valuable skills remain grounded in **real work**:
+- Setting up and activating a virtual environment
+- Running Python modules with `python -m`
+- Understanding ETL logic
+- Processing multiple data formats
+- Logging results
+- Using Git and GitHub professionally
+
+Each phase of this project mirrors the workflow of a real analytics team.
+
+---
 
 ## This Project
 
-This project illustrates ETL data pipelines processing raw data with the following types:
+This project illustrates a complete ETL pipeline system that processes raw data in four formats:
 
-- CSV (comma separated values)
-- JSON (structured data commonly used to exchange information over the web)
-- Text (excerpt from _Romeo and Juliet_)
-- Excel file (using the `openpyxl` package added to `pyproject.toml`)
+- **CSV** — numeric datasets and descriptive statistics
+- **JSON** — hierarchical structured data
+- **Text** — unstructured natural-language content
+- **Excel (XLSX)** — spreadsheet data using `openpyxl`
 
-The working example illustrates a complete pipeline.
-Use the working example and your resources to create your own processing pipelines.
+The working example demonstrates a full, end-to-end pipeline.
+Use it as a model to build your own custom pipelines.
 
-Think about some raw data you would like to process.
+---
 
-- What format is the data? Choose from csv, json, text, or xlsx.
-- Choose static data (e.g., in files), rather than data in motion (e.g., social media streams)
-- Being able to read and process a wide variety of data files is critical in professional analytics.
-- Python is popular partly because it makes building data pipelines relatively easy.
+## Choosing Your Data
 
-## Project Specific Choices for Data Pipeline projects
+Think about the raw data you want to process:
 
-We've turned off some PyRight type checks since we are working with raw data pipelines.
+- What format is it? (CSV, JSON, TXT, XLSX)
+- Is it static? (Use files stored in your project, not live streams)
 
-- WHY: We don't know what types things are until after we read them.
-- See pyproject.toml and the [tool.pyright] section for details.
+Being able to read and process a wide variety of data files is essential in professional analytics.
+Python is widely used because it makes building these pipelines clean, modular, and repeatable.
 
-We use keyword-only function arguments when defining our ETL functions.
+---
 
-- In our functions, you'll see a `*,`.
-- The asterisk can appear anywhere in the list of parameters.
-- EVERY argument AFTER the asterisk must be passed using the named keyword argument (also called kwarg), rather than by position.
-- WHY: Requiring named arguments prevents argument-order mistakes.
-- It also makes our function calls self-documenting, which can be especially helpful in data-processing pipelines.
+## Project-Specific Design Choices
 
-## Large Project File
+### PyRight Type Checking Adjustments
+Some PyRight checks are disabled for this project.
 
-This repo includes a 2.2 MB Excel data file.
-We have increased the size of the "large file" check in our pre-commit hooks.
+**Why:**
+When working with raw data, types are often unknown until after reading the file.
+See the `[tool.pyright]` section in `pyproject.toml` for details.
 
-## DEBUG HELP: If you see "import block is unsorted",
+---
 
-Mouse over, click lightbulb icon for suggestions. and select "Organize Imports".
+### Keyword-Only Function Arguments
+ETL functions use **keyword-only parameters**.
 
-## DEBUG HELP: If you see "Type of run_csv_pipeline is unknown",
+You’ll see a `*,` in the function definitions.
+Everything after the asterisk must be passed using named keyword arguments.
 
-Ensure you have set up your .venv.
-View / Command Palette: Python: Select Interpreter.
-Select the .venv in this project folder.
-View / Command Palette: Developer: Reload Window.
+**Why this matters:**
+- Prevents argument-order mistakes
+- Makes function calls self-documenting
+- Improves clarity in multi-step pipelines
+
+This is a common pattern in production analytics code.
+
+---
+
+## Large Project File Notice
+
+This repository includes a **2.2 MB Excel file**.
+The pre-commit configuration has been adjusted to allow this file size.
+
+### Debug Tips
+- If you see “import block is unsorted”:
+  Use VS Code → hover → lightbulb → **Organize Imports**.
+- If you see “Type of run_csv_pipeline is unknown”:
+  Ensure your `.venv` is active and selected in VS Code.
+  Command Palette → **Python: Select Interpreter** → choose the `.venv`.
+  Then reload the window.
+
+---
 
 ## Working Files
 
-You'll work with just these areas:
+You will work primarily in:
 
-- **docs/** - the project narrative and documentation
-- **src/datafun** - where the magic happens
-- **pyproject.toml** - update authorship & links
-- **zensical.toml** - update authorship & links
+- `docs/` — project narrative and documentation
+- `src/datafun/` — all pipeline logic
+- `pyproject.toml` — authorship, metadata, dependencies
+- `zensical.toml` — authorship and project links
+
+---
 
 ## Instructions
 
-Follow the [step-by-step workflow guide](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/) to complete:
+Follow the workflow guide to complete:
 
-1. Phase 1. **Start & Run**
-2. Phase 2. **Change Authorship**
-3. Phase 3. **Read & Understand**
-4. Phase 4. **Modify**
-5. Phase 5. **Apply**
+1. Phase 1 — Start & Run
+2. Phase 2 — Change Authorship
+3. Phase 3 — Read & Understand
+4. Phase 4 — Modify
+5. Phase 5 — Apply
+
+Each phase builds on the previous one.
+
+---
 
 ## Challenges
 
 Challenges are expected.
-Sometimes instructions may not quite match your operating system.
-When issues occur, share screenshots, error messages, and details about what you tried.
-Working through issues is part of implementing professional projects.
+Different operating systems behave differently, and part of learning professional analytics is troubleshooting:
+
+- Share screenshots
+- Include error messages
+- Describe what you tried
+
+Working through issues is part of the process.
+
+---
 
 ## Success
 
-After completing Phase 1. **Start & Run**, you'll have your own GitHub project,
-running on your machine, and running the example will print out:
+After completing **Phase 1**, you will have:
+
+- A working GitHub repository
+- A functioning local environment
+- A complete analytics pipeline
+
+Running the example prints:
+
 
 ```shell
-========================
-Executed successfully!
-========================
+========== Executed successfully! ==========
 ```
 
 ## Command Reference
@@ -167,24 +213,29 @@ git push -u origin main
 ## Example Output
 
 ```text
-| INFO | P03 | ========================
-| INFO | P03 | START main()
-| INFO | P03 | ========================
-| INFO | P03 | ROOT_DIR = .
-| INFO | P03 | PROCESSED_DIR = data\processed
-| INFO | P03 | CSV: START
-| INFO | P03 | CSV: wrote C:\Repos\datafun\datafun-03-analytics\data\processed\csv_ladder_score_stats.txt
-| INFO | P03 | CSV: END
-| INFO | P03 | XLSX: START
-| INFO | P03 | XLSX: wrote C:\Repos\datafun\datafun-03-analytics\data\processed\xlsx_feedback_github_count.txt
-| INFO | P03 | XLSX: END
-| INFO | P03 | JSON: START
-| INFO | P03 | JSON: wrote C:\Repos\datafun\datafun-03-analytics\data\processed\json_astronauts_by_craft.txt
-| INFO | P03 | JSON: END
-| INFO | P03 | TXT: START
-| INFO | P03 | TXT: wrote C:\Repos\datafun\datafun-03-analytics\data\processed\txt_summary.txt
-| INFO | P03 | TXT: END
-| INFO | P03 | ========================
-| INFO | P03 | Executed successfully!
-| INFO | P03 | ========================
-```
+2026-05-27 06:36:58 | INFO | JT | ========== START main() ==========
+2026-05-27 06:36:58 | INFO | JT | ROOT_DIR = .
+2026-05-27 06:36:58 | INFO | JT | PROCESSED_DIR = data\processed
+2026-05-27 06:36:58 | INFO | JT | CSV PIPELINE: START
+2026-05-27 06:36:58 | INFO | JT | CSV PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\justice_score_stats.txt
+2026-05-27 06:36:58 | INFO | JT | CSV PIPELINE: END
+2026-05-27 06:36:58 | INFO | JT | JT XLSX PIPELINE: START
+
+=== FEEDBACK FROM EXCEL ===
+Excellent work on the project!
+The results were excellent and clear.
+Needs improvement in documentation.
+Excellent presentation and delivery.
+Good effort overall.
+=== END FEEDBACK ===
+
+2026-05-27 06:36:58 | INFO | JT | JT XLSX PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\jt_xlsx_word_count.txt
+2026-05-27 06:36:58 | INFO | JT | JT XLSX PIPELINE: END
+2026-05-27 06:36:58 | INFO | JT | JSON PIPELINE: START
+2026-05-27 06:36:58 | INFO | JT | JSON PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\json_people_by_country.txt
+2026-05-27 06:36:58 | INFO | JT | JSON PIPELINE: END
+2026-05-27 06:36:58 | INFO | JT | JT TXT PIPELINE: START
+2026-05-27 06:36:58 | INFO | JT | JT TXT PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\jt_text_summary.txt
+2026-05-27 06:36:58 | INFO | JT | JT TXT PIPELINE: END
+2026-05-27 06:36:58 | INFO | JT | ========== Executed successfully! ==========
+(datafun-03-analytics) PS C:\Users\JTEFE\Repos\datafun-03-analytics>
