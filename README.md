@@ -179,8 +179,6 @@ They are provided here for convenience.
 
 Follow the guide for the **full instructions**.
 
-<details>
-<summary>Show command reference</summary>
 
 ### In a machine terminal (open in your `Repos` folder)
 
@@ -205,7 +203,7 @@ git add -A
 uvx pre-commit run --all-files
 
 ## Run the Example Module
-uv run python -m datafun.app_case
+uv run python -m datafun.app_jt
 
 ## Save Progress
 git add -A
