@@ -12,7 +12,8 @@ Running this file executes ALL my ETVL pipelines and writes results to:
 
 Run from project root:
 
-    uv run python -m cintel.app_jt
+    uv run python -m datafun.app_jt
+
 """
 
 import logging

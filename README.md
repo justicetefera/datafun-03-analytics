@@ -6,7 +6,7 @@
 Python 3.14+ • MIT License
 
 A professional Python analytics project demonstrating multi-format ETL (Extract–Transform–Load) pipelines.
-This repository: https://github.com/justicetefera/datafun-03-analytics
+
 
 This project processes real data files, generates structured outputs, and follows the conventions of modern Python development.
 
@@ -14,8 +14,7 @@ This project processes real data files, generates structured outputs, and follow
 
 ## Project Overview
 
-Data analytics requires durable, real-world skills: setting up a clean environment, reading and understanding code, running pipelines, interpreting results, and pushing work to a shared repository.
-This project builds those capabilities through hands-on practice with a fully structured Python codebase.
+Data analytics requires durable, real‑world skills that go far beyond simply running code. Analysts must be able to set up and maintain a clean development environment, read and interpret existing codebases, execute multi‑step pipelines, analyze and validate outputs, and confidently push their work to a shared repository where others can review, reproduce, and build upon it. These abilities form the foundation of professional analytical practice. This project is designed to strengthen those capabilities through hands‑on experience with a fully structured Python codebase, giving learners the opportunity to work with real data, troubleshoot issues, and develop the habits and workflows used by modern analytics teams.
 
 In the age of generative AI, the most valuable skills remain grounded in **real work**:
 - Setting up and activating a virtual environment
@@ -40,6 +39,30 @@ This project illustrates a complete ETL pipeline system that processes raw data 
 
 The working example demonstrates a full, end-to-end pipeline.
 Use it as a model to build your own custom pipelines.
+
+## Clone the Repository
+git clone https://github.com/username/datafun-03-analytics
+cd datafun-03-analytics
+code .
+
+## Environment Setup
+uv self update
+uv python pin 3.14
+uv sync --extra dev --extra docs --upgrade
+uvx pre-commit install
+
+## Run Pre‑Commit
+git add -A
+uvx pre-commit run --all-files
+git add -A
+uvx pre-commit run --all-files
+
+## Save Progress
+git add -A
+git commit -m "update"
+git push -u origin main
+
+
 
 ---
 
@@ -164,46 +187,30 @@ Follow the guide for the **full instructions**.
 After you get a copy of this repo in your own GitHub account,
 open a machine terminal in your `Repos` folder:
 
-```shell
-# Replace username with YOUR GitHub username.
+## Clone the Repository
 git clone https://github.com/username/datafun-03-analytics
-
 cd datafun-03-analytics
 code .
-```
 
-### In a VS Code terminal
-
-```shell
+## Environment Setup
 uv self update
 uv python pin 3.14
 uv sync --extra dev --extra docs --upgrade
-
 uvx pre-commit install
 
+## Run Pre‑Commit
 git add -A
 uvx pre-commit run --all-files
-# repeat if changes were made
 git add -A
 uvx pre-commit run --all-files
 
-# run the module
+## Run the Example Module
 uv run python -m datafun.app_case
 
-# do chores
-uv run ruff format .
-uv run ruff check . --fix
-uv run python -m pyright
-uv run pytest
-uv run zensical build
-
-# save progress
+## Save Progress
 git add -A
 git commit -m "update"
 git push -u origin main
-```
-
-</details>
 
 ## Notes
 
@@ -213,13 +220,21 @@ git push -u origin main
 ## Example Output
 
 ```text
-2026-05-27 06:36:58 | INFO | JT | ========== START main() ==========
-2026-05-27 06:36:58 | INFO | JT | ROOT_DIR = .
-2026-05-27 06:36:58 | INFO | JT | PROCESSED_DIR = data\processed
-2026-05-27 06:36:58 | INFO | JT | CSV PIPELINE: START
-2026-05-27 06:36:58 | INFO | JT | CSV PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\justice_score_stats.txt
-2026-05-27 06:36:58 | INFO | JT | CSV PIPELINE: END
-2026-05-27 06:36:58 | INFO | JT | JT XLSX PIPELINE: START
+2026-05-27 16:16:06 | INFO | JT | === RUN START ===
+2026-05-27 16:16:06 | INFO | JT | project=JT PIPELINES
+2026-05-27 16:16:06 | INFO | JT | repo_dir=datafun-03-analytics
+2026-05-27 16:16:06 | INFO | JT | python=3.14.5
+2026-05-27 16:16:06 | INFO | JT | os=Windows 11
+2026-05-27 16:16:06 | INFO | JT | shell=powershell
+2026-05-27 16:16:06 | INFO | JT | cwd=.
+2026-05-27 16:16:06 | INFO | JT | github_actions=False
+2026-05-27 16:16:06 | INFO | JT | ========== START main() ==========
+2026-05-27 16:16:06 | INFO | JT | ROOT_DIR = .
+2026-05-27 16:16:06 | INFO | JT | PROCESSED_DIR = data\processed
+2026-05-27 16:16:06 | INFO | JT | CSV PIPELINE: START
+2026-05-27 16:16:06 | INFO | JT | CSV PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\justice_score_stats.txt
+2026-05-27 16:16:06 | INFO | JT | CSV PIPELINE: END
+2026-05-27 16:16:06 | INFO | JT | JT XLSX PIPELINE: START
 
 === FEEDBACK FROM EXCEL ===
 Excellent work on the project!
@@ -229,13 +244,12 @@ Excellent presentation and delivery.
 Good effort overall.
 === END FEEDBACK ===
 
-2026-05-27 06:36:58 | INFO | JT | JT XLSX PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\jt_xlsx_word_count.txt
-2026-05-27 06:36:58 | INFO | JT | JT XLSX PIPELINE: END
-2026-05-27 06:36:58 | INFO | JT | JSON PIPELINE: START
-2026-05-27 06:36:58 | INFO | JT | JSON PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\json_people_by_country.txt
-2026-05-27 06:36:58 | INFO | JT | JSON PIPELINE: END
-2026-05-27 06:36:58 | INFO | JT | JT TXT PIPELINE: START
-2026-05-27 06:36:58 | INFO | JT | JT TXT PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\jt_text_summary.txt
-2026-05-27 06:36:58 | INFO | JT | JT TXT PIPELINE: END
-2026-05-27 06:36:58 | INFO | JT | ========== Executed successfully! ==========
-(datafun-03-analytics) PS C:\Users\JTEFE\Repos\datafun-03-analytics>
+2026-05-27 16:16:06 | INFO | JT | JT XLSX PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\jt_xlsx_word_count.txt
+2026-05-27 16:16:06 | INFO | JT | JT XLSX PIPELINE: END
+2026-05-27 16:16:06 | INFO | JT | JSON PIPELINE: START
+2026-05-27 16:16:06 | INFO | JT | JSON PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\json_people_by_country.txt
+2026-05-27 16:16:06 | INFO | JT | JSON PIPELINE: END
+2026-05-27 16:16:06 | INFO | JT | JT TXT PIPELINE: START
+2026-05-27 16:16:06 | INFO | JT | JT TXT PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\jt_text_summary.txt
+2026-05-27 16:16:06 | INFO | JT | JT TXT PIPELINE: END
+2026-05-27 16:16:06 | INFO | JT | ========== Executed successfully! ==========
