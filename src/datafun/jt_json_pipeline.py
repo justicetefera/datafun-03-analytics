@@ -4,9 +4,6 @@ jaso_pipeline.py - Custom JSON ETVL pipeline.
 Author: Justice Tefera
 Date: 2026-05
 
-This file is my custom version of the instructor's JSON pipeline.
-It practices key Python skills:
-
     - ETVL pipeline structure (Extract, Transform, Verify, Load)
     - reading JSON files using the json module
     - walking JSON: dictionaries, lists, and nested structures

@@ -4,9 +4,6 @@ justice_csv_pipeline.py - Custom CSV ETVL pipeline.
 Author: Justice Tefera
 Date: 2026-05
 
-This file is my custom version of the instructor's CSV pipeline.
-It practices key Python skills:
-
     - ETVL pipeline structure (Extract, Transform, Verify, Load)
     - reading CSV files using the csv module
     - keyword-only function arguments

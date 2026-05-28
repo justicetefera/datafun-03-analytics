@@ -4,9 +4,6 @@ jt_text_pipeline.py - Custom Text ETVL pipeline.
 Author: Justice Tefera
 Date: 2026-05
 
-This file is my custom version of the instructor's text pipeline.
-It practices key Python skills:
-
     - ETVL pipeline structure (Extract, Transform, Verify, Load)
     - reading text files line by line
     - counting lines, words, characters, and custom metrics
