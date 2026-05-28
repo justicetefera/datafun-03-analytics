@@ -44,4 +44,3 @@ Good effort overall.
 2026-05-28 03:01:50 | INFO | JT | JT TXT PIPELINE: wrote C:\Users\JTEFE\Repos\datafun-03-analytics\data\processed\jt_text_summary.txt
 2026-05-28 03:01:50 | INFO | JT | JT TXT PIPELINE: END
 2026-05-28 03:01:50 | INFO | JT | ========== Executed successfully! ==========
-(datafun-03-analytics) PS C:\Users\JTEFE\Repos\datafun-03-analytics>
