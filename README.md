@@ -40,30 +40,6 @@ This project illustrates a complete ETL pipeline system that processes raw data 
 The working example demonstrates a full, end-to-end pipeline.
 Use it as a model to build your own custom pipelines.
 
-## Clone the Repository
-git clone https://github.com/username/datafun-03-analytics
-cd datafun-03-analytics
-code .
-
-## Environment Setup
-uv self update
-uv python pin 3.14
-uv sync --extra dev --extra docs --upgrade
-uvx pre-commit install
-
-## Run Pre‑Commit
-git add -A
-uvx pre-commit run --all-files
-git add -A
-uvx pre-commit run --all-files
-
-## Save Progress
-git add -A
-git commit -m "update"
-git push -u origin main
-
-
-
 ---
 
 ## Choosing Your Data

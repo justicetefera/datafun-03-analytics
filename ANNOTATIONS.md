@@ -39,7 +39,7 @@ This document records the execution of the JT Pipelines program, including:
 
 ---
 
-## Example Output (Formatted)
+## Example Output
 
 ![alt text](ExOutput.png)
 
