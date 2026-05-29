@@ -147,23 +147,18 @@ Running the example prints:
 ```shell
 ========== Executed successfully! ==========
 ```
-
+<details>
+<summary><strong>Command Reference</strong></summary>
 ## Command Reference
-
 The commands below are used in the workflow guide above.
 They are provided here for convenience.
 
-Follow the guide for the **full instructions**.
-
-
-### In a machine terminal (open in your `Repos` folder)
-
+## In a machine terminal (open in your `Repos` folder)
 After you get a copy of this repo in your own GitHub account,
 open a machine terminal in your `Repos` folder:
 
 ## Clone the Repository
-git clone https://github.com/username/datafun-03-analytics
-cd datafun-03-analytics
+git clone
 code .
 
 ## Environment Setup
