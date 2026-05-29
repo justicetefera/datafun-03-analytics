@@ -148,43 +148,54 @@ Running the example prints:
 ========== Executed successfully! ==========
 ```
 <details>
-<summary><strong>Command Reference</strong></summary>
-## Command Reference
-The commands below are used in the workflow guide above.
-They are provided here for convenience.
+<summary><strong>JT Pipelines — Phase 4 Updates</strong></summary>
 
-## In a machine terminal (open in your `Repos` folder)
-After you get a copy of this repo in your own GitHub account,
-open a machine terminal in your `Repos` folder:
+## 1. New Custom Application Runner
+- Created `app_jt.py`
+- Set project identity to **JT PIPELINES**
+- Set logger name to **"JT"**
 
-## Clone the Repository
-git clone
-code .
+---
 
-## Environment Setup
-uv self update
-uv python pin 3.14
-uv sync --extra dev --extra docs --upgrade
-uvx pre-commit install
+## 2. Added Custom Pipeline Modules
+- jt_csv_pipeline.py
+- jt_xlsx_pipeline.py
+- jt_json_pipeline.py
+- jt_text_pipeline.py
 
-## Run Pre‑Commit
-git add -A
-uvx pre-commit run --all-files
-git add -A
-uvx pre-commit run --all-files
+---
 
-## Run the Example Module
-uv run python -m datafun.app_jt
+## 3. Updated Imports in `app_jt.py`
+The app imports and runs the custom pipelines:
+- run_csv_pipeline
+- run_xlsx_pipeline
+- run_json_pipeline
+- run_text_pipeline
 
-## Save Progress
-git add -A
-git commit -m "update"
-git push -u origin main
+---
 
-## Notes
+## 4. Used Custom Datasets
+Pipelines read:
+- justice_scores.csv
+- jt_feedback.xlsx
+- people.json
+- jt_notes.txt
 
-- Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
-- Use `CTRL+f` to find (and replace) text within a file.
+---
+
+## 5. Implemented New Transform Logic
+- **CSV:** summary statistics
+- **XLSX:** feedback extraction + word count
+- **JSON:** grouping by country
+- **TXT:** text summarization
+
+---
+
+## 6. Added Custom Logging Messages
+Custom log blocks and labeled sections were added to improve traceability.
+
+</details>
+
 
 ## Example Output
 
